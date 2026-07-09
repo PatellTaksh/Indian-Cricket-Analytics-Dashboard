@@ -44,25 +44,62 @@ Instead of using a pre-built dataset, the data is collected directly from the of
 ```text
 Indian_Cricket_Analytics/
 │
-├── Web_Scraping/
-│   └── Scraping_File.ipynb
-│
+├── Dashboard/
+│   └── Player_Data_Analysis.pbix
+|
 ├── Data_Cleaning/
-│   ├── Men_Test_Data_Cleaning.ipynb
-│   ├── Men_ODI_Data_Cleaning.ipynb
-│   ├── Men_T20I_Data_Cleaning.ipynb
-│   ├── Women_Test_Data_Cleaning.ipynb
-│   ├── Women_ODI_Data_Cleaning.ipynb
-│   └── Women_T20I_Data_Cleaning.ipynb
-│
+|   └── Cleaned_CSV
+│   |   ├── Clean_Men_ODI.csv
+│   |   ├── Clean_Men_T20I.csv
+│   |   ├── Clean_Men_Test.csv
+│   |   ├── Clean_Women_ODI.csv
+│   |   ├── Clean_Women_T20I.csv
+│   |   └── Clean_Women_Test.csv
+|   |
+|   └── Cleaned_Python
+│       ├── Men_ODI_Data_Cleaning.ipynb
+│       ├── Men_T20I_Data_Cleaning.ipynb
+│       ├── Men_Test_Data_Cleaning.ipynb
+│       ├── Women_ODI_Data_Cleaning.ipynb
+│       ├── Women_T20I_Data_Cleaning.ipynb
+│       └── Women_Test_Data_Cleaning.ipynb
+|
 ├── Data_Merging/
-│   └── Player_Data.ipynb
-│
-├── PostgreSQL/
-│   └── SQL Tables
-│
-├── PowerBI/
-│   └── Indian_Cricket_Analytics.pbix
+|   └── Merged_Python
+│   |   ├── Player_Data.ipynb
+|   |
+|   └── Player_Data
+│       ├── Player_Date.csv
+│       └── Player_Name_Date.csv
+|
+├── Images/
+|   └── Dashboard_Images
+│   |   ├── 1._Cricket_Overview.png
+│   |   ├── 2._Cricket_Men's_Overview.png
+│   |   ├── 3._Cricket_Women's_Overview.png
+│   |   ├── 4._Cricket_Player_Comparison.png
+│   |   ├── 5._Cricket_Complete_Statistics.png
+│   |   └── 6._Cricket_Player_Profile_(Drill_Through).png
+|   |
+|   └── Logo
+│       ├── BCCI_Logo.webp
+
+├── Web_Scraping/
+|   └── Scraped_Data
+│   |   ├── Men_ODI_Analysis.csv
+│   |   ├── Men_T20I_Analysis.csv
+│   |   ├── Men_Test_Analysis.csv
+│   |   ├── Women_ODI_Analysis.csv
+│   |   ├── Women_T20I_Analysis.csv
+│   |   └── Women_Test_Analysis.csv
+|   |
+|   └── Scraping_Python
+│       ├── Men_ODI_Analysis.ipynb
+│       ├── Men_T20I_Analysis.ipynb
+│       ├── Men_Test_Analysis.ipynb
+│       ├── Women_ODI_Analysis.ipynb
+│       ├── Women_T20I_Analysis.ipynb
+│       └── Women_Test_Analysis.ipynb
 │
 └── README.md
 ```
@@ -89,6 +126,12 @@ Transform
 Clean CSV Files
        │
        ▼
+Merge player statistics
+       │
+       ▼
+Merged CSV file
+       │
+       ▼
 Load
 (PostgreSQL Database)
        │
@@ -106,7 +149,6 @@ The dashboard consists of **6 interactive pages** designed to provide both high-
 
 - Overall project summary
 - Top-ranked Men's and Women's batters
-- Quick navigation to other dashboard pages
 
 ![Overview](Images/Dashboard_Images/1._Cricket_Overview.png)
 ---
@@ -142,7 +184,6 @@ Includes:
 - Runs
 - Matches
 - Average
-- Strike Rate
 - Hundreds
 - Fifties
 
@@ -163,7 +204,6 @@ Detailed analysis of an individual player including:
 - Rankings
 - Runs
 - Average
-- Strike Rate
 - Matches
 - Boundary statistics
 
