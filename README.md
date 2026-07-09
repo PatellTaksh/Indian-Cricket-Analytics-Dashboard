@@ -14,6 +14,16 @@ Instead of using a pre-built dataset, the data is collected directly from the of
 
 ---
 
+# Live Dashboard
+
+Explore the interactive Power BI dashboard here:
+
+**Live Dashboard:** [View Dashboard](https://app.powerbi.com/groups/me/reports/4fd2ace2-6140-434e-9cbf-4ba6429f30ea/4f89accfdc27702939ff?experience=power-bi)
+
+> **Note:** The dashboard is best viewed on a desktop or laptop for the optimal interactive experience.
+
+---
+
 # Objectives
 
 - Extract batting statistics from the official BCCI website.
